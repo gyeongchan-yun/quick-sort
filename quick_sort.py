@@ -7,6 +7,15 @@ def swap(arr, a, b):
 
 
 def partition(arr, start, end):
+    '''
+        example procedure:
+            arr = [ 2 8 7 1 3 5 6 4]
+            2 1 3 8 7 5 6 4
+        start   i       j end -> j <= end - 1
+
+            2 1 3 4 7 5 6 8
+        start   i         end -> arr[i+1] <-> arr[end]
+    '''
     val = arr[end]
     i = start - 1
 
